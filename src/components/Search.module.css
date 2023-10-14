@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sugestoes{
+    background-color: rgb(235, 247, 255);
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top: 60px;
+    width: 330px;
+    display: block;
+    z-index: 9;
+}
+
+.campo_pesquisa{
+height: 20px;
+border-radius: 15px;
+padding: 5px;
+z-index: 10;
+}
+
+.item{
+    padding: 5px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: rgb(148, 212, 255)
+
+}
