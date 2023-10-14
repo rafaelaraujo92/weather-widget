@@ -8,14 +8,14 @@ const Weather = ({lat, long}) => {
 
 const [weather, setWeather] = useState();
 const apiKey = "a4366cc9dc8ea7054502f5adc8095e51";
-const [icon, setIcon] = useState();
-const [temp, setTemp] = useState();
-const [humidity, setHumidity] = useState();
-const [windSpeed, setWindSpeed] = useState();
-const [windDeg, setWindDeg] = useState();
-const [pressure, setPresssure] = useState();
-const [description, setDescription] = useState();
-const [city, setCity] = useState();
+const [icon, setIcon] = useState("10d");
+const [temp, setTemp] = useState("");
+const [humidity, setHumidity] = useState("");
+const [windSpeed, setWindSpeed] = useState("");
+const [windDeg, setWindDeg] = useState("");
+const [pressure, setPresssure] = useState("");
+const [description, setDescription] = useState("");
+const [city, setCity] = useState("");
 
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&lang=pt_br&appid=${apiKey}`;

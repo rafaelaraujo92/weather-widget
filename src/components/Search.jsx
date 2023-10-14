@@ -14,8 +14,6 @@ const Search = ({setLat, setLong}) => {
         
     }, [])
 
-    console.log(cities)
-
     function trataPesquisa(strQuery){
        let normalized = strQuery.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
         return normalized;
@@ -24,7 +22,6 @@ const Search = ({setLat, setLong}) => {
     function carregaSugestoes(e){
         setSearchQuery(e.target.value)
         setSugestoes(cities.filter(obj => trataPesquisa(obj.name).includes(e.target.value.toUpperCase())).slice(0,10))
-        console.log(sugestoes)
     }
 
     function carregaTempo(e){
